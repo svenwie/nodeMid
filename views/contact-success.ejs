@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Index Page</title>
+    <link href="assets/styles.css" rel="stylesheet" type="text/css" />
+    <!-- <style>body{background: skyblue; font-family: verdana; color: white; padding: 30px;}
+</style> -->
+      </head>
+      <body>
+        <% include partials/nav.ejs %>
+        <h1>Contact us</h1>
+          <p>Thanks for getting in touch!</p>
+          <p>You contacted <%= data.who%> in the <%= data.department%> department.</p>
+          <p>We will respond to <%= data.email%> asap!</p>
+      </body>
+</html>

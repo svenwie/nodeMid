@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Index Page</title>
+    <link href="assets/styles.css" rel="stylesheet" type="text/css" />
+      </head>
+      <body>
+          <% include partials/nav.ejs %>
+          <h1>This is the profile page of <%= person %></h1>
+          <p>Age: <%= data.age%></p>
+          <p>Job: <%= data.job%></p>
+          <p>Hobbies:</p>
+          <ul>
+            <% data.hobbys.forEach(function(item){ %>
+                <li><%= item %></li>
+            <% }); %>
+          </ul>
+          <p>A view gets generated here using ejs.</p>
+          <p>So the filename ends with .ejs.</p>
+      </body>
+</html>
